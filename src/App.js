@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Index from './components/views/index.jsx'
+export default class App extends React.Component{
+  
+    handClick = ()=>{
+       
+    }
+    //当组件一加载完毕的时候 来监听
+    componentDidMount(){
+     
+    }
+     render(){
+         
+          return(
+               <div>
+                    <Index></Index>
+               </div>
+          )
+     }
 }
-
-export default App;
